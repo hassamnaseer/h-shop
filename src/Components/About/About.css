@@ -1,0 +1,29 @@
+@import '../../Fonts/Fonts.css';
+
+.heading-1 {
+  font-family: 'Vietnam', sans-serif !important; 
+  color: #35485F !important;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 25px 0;
+  margin: 0 auto;
+}
+
+.about {
+  text-align: justify;
+  color: #35485F;
+}
+
+.about a {
+  color: #CB8460;
+}
+
+.about a:hover {
+  color: #CB8460;
+  text-decoration: underline;
+}
+
+.about ul {
+  list-style-type: circle;
+  padding: 0 20px;
+}

@@ -1,0 +1,150 @@
+@import '../../Fonts/Fonts.css';
+
+footer {
+  font-family: 'Vietnam', sans-serif !important; 
+  bottom: 0px;
+  width: 100%;
+  margin-top: 50px;
+  background: #35485F;
+}
+
+.main-content {
+  display: flex !important;
+  padding: 15px 30px 0 30px;
+}
+
+.main-content .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2 {
+  font-family: 'Vietnam', sans-serif !important; 
+  color: #fff;
+  font-size: 1.325rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.box .content {
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .content:before {
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  /* background: #fff; */
+}
+
+.box .content:after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 25%;
+  background: #CB8460;
+  top: -15px;
+}
+
+.center {
+  padding: 10px 0px !important;
+}
+
+.center .content {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+}
+
+ul li {
+  padding-bottom: 5px;
+}
+
+.left img {
+  height: 13vh;
+  display: block;
+  max-width: 100%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-bottom: 50px;
+}
+
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+  padding: 0 2px;
+}
+
+.right .content p {
+  text-align: justify;
+  color: #fff;
+}
+
+.right .content a {
+  color: #CB8460;
+}
+
+.right .content a:hover {
+  text-decoration: underline;
+}
+
+.right .content .social a .icon {
+  /* height: 40px !important;
+  width: 40px !important; */
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.right .content .social a .icon:hover {
+  color: #CB8460;
+}
+
+.right .content .social>:last-child {
+  padding-left: 20px;
+}
+
+.bottom {
+  padding: 35px 50px;
+}
+
+.bottom .credit {
+  color: #fff;
+}
+
+.bottom .credit a {
+  color: #CB8460;
+}
+
+.bottom .credit a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+  footer {
+    position: relative;
+    bottom: 0;
+  }
+
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .main-content .box {
+    margin: 5px 0;
+  }
+}

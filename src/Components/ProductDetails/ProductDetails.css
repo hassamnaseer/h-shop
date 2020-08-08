@@ -1,0 +1,194 @@
+@import '../../Fonts/Fonts.css';
+
+.top {
+  padding: 0px !important;
+  margin-bottom: 80px;
+}
+
+.des_top {
+  height: 350px !important;
+  background-image: url("unsplash-3.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.des_top p {
+  position: absolute;
+  bottom: 40%;
+  left: 23%;
+  font-family: 'Vietnam', sans-serif !important;
+  font-size: 50px;
+  font-weight: 900;
+  color: #CB8460;
+}
+
+.ifNoProduct {
+  font-family: 'Vietnam', sans-serif !important;
+  text-align: center;
+  color: #35485F;
+  margin: 50px 0;
+}
+
+.ifNoProduct a {
+  color: #CB8460;
+}
+
+.ifNoProduct a:hover {
+  color: #CB8460;
+  text-decoration: underline;
+}
+
+.product_slider_img img{
+  height: 40vh;
+}
+
+@media (max-width: 576px) {
+  .s_product_text {
+    margin-top: 30px;
+  }
+}
+
+.s_product_text h5 {
+  font-family: 'Vietnam', sans-serif !important; 
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+  .s_product_text h5 {
+    margin-bottom: 15px;
+  }
+}
+
+.s_product_text h5 span {
+  margin: 0 10px;
+}
+
+.s_product_text h3 {
+  font-family: 'Vietnam', sans-serif !important; 
+  font-size: 24px;
+  font-weight: 700;
+  color: #35485F;
+  margin-bottom: 10px;
+}
+
+.s_product_text h2 {
+  font-family: 'Vietnam', sans-serif !important; 
+  font-size: 20px;
+  font-weight: bold;
+  color: #CB8460;
+  margin-bottom: 15px;
+}
+
+.s_product_text .list li {
+  margin-bottom: 5px;
+}
+
+.s_product_text .list li {
+  font-size: 14px;
+  font-family: "futura-medium" !important;
+  font-weight: normal;
+  color: #35485F;
+}
+
+.s_product_text .list li span {
+  width: 90px;
+  display: inline-block;
+}
+
+.s_product_text .list li span:hover {
+  color: #555;
+}
+
+.s_product_text .list li a.active {
+  color: #CB8460;
+}
+
+.s_product_text .list li a.active span {
+  color: #555;
+}
+
+.s_product_text .list li:last-child {
+  margin-bottom: 0px;
+}
+
+.s_product_text p {
+  padding-top: 20px;
+  border-top: 1px dotted #d5d5d5;
+  margin: 20px 0;
+}
+
+.s_product_text .card_area .main_btn {
+  line-height: 38px;
+  padding: 0px 38px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.s_product_text .card_area .icon_btn {
+  margin-right: 10px;
+  background: #f6f6f6;
+  border-radius: 3px;
+  color: #2a2a2a;
+  display: inline-block;
+  line-height: 40px;
+  text-align: center;
+  padding: 0px 13px;
+  font-size: 14px;
+}
+
+.s_product_text .card_area .icon_btn:hover {
+  background: #fff;
+  box-shadow: -14.142px 14.142px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.s_product_text .card_area {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 0;
+}
+
+.s_product_text .card_area .product_count input {
+  border: 0px solid transparent;
+  text-align: center;
+}
+
+.s_product_text .product_count {
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+}
+
+.s_product_text .product_count .input-number {
+  display: inline-block;
+  width: 60px;
+}
+
+@media (max-width: 576px) {
+  .s_product_text .product_count .input-number {
+    width: 30px;
+  }
+}
+
+.btn_3 {
+  display: block;
+  border-radius: 2rem !important;
+  margin-left: 20px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 11px !important;
+  padding-bottom: 14px !important;
+  background-color: #35485F !important;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn_3:hover {
+  background-color: #CB8460 !important;
+}

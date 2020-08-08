@@ -1,0 +1,461 @@
+@import '../../Fonts/Fonts.css';
+
+.product-container {
+  margin-top: 50px !important;
+}
+
+.top {
+  padding: 0px !important;
+}
+
+.shop {
+  position: relative;
+  height: 350px !important;
+  background-image: url("unsplash-2.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.shop p {
+  position: absolute;
+  bottom: 40%;
+  left: 23%;
+  font-family: 'Vietnam', sans-serif !important;
+  font-size: 60px;
+  font-weight: 900;
+  color: #CB8460;
+}
+
+.products-grid {
+  margin-top: 15px;
+  height: 10%;
+  align-content: center;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.single_product_item {
+  position: relative;
+  height: auto;
+  width: 230px !important;
+  text-align: center;
+  vertical-align: baseline;
+  margin: 0 auto !important;
+  height: 100%;
+}
+
+/* .card {
+  align-content: center;
+  margin: 0 !important;
+} */
+
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0), 0 2px 10px 0 rgba(0,0,0,0) !important;
+}
+
+/* .product-image {
+  height: 20rem !important;
+  max-width: auto !important;
+  min-width: auto !important;
+  position: relative;
+} */
+
+.ui.card>.image>img {
+  height: 100% !important;
+  max-width: auto !important;
+  min-width: auto !important;
+  position: relative;
+
+}
+
+.overlay {
+  position: absolute;
+  height: 280px;
+  width: inherit;
+  opacity: 0.3;
+  visibility: hidden;
+}
+
+.single_product_item:hover .overlay {
+  visibility: visible;
+}
+
+.single_product_text {
+  background-color: #fff;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+}
+
+.product_heading h2{
+  font-family: 'Vietnam', sans-serif !important;
+  font-weight: 700;
+  color: #35485F;
+  font-size: 17px;
+    text-transform: capitalize;
+}
+
+.product_price h3 {
+  font-family: 'Vietnam', sans-serif !important;
+  font-weight: 600;
+  color: #CB8460;
+  font-size: 14px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.single_product_item .add_cart {
+  /* color: #CB8460; */
+  color: #000;
+  font-family: "futura";
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  position: absolute;
+  top: 42%;
+  left: 25%;
+}
+
+.single_product_item .add_cart i {
+  float: right;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+}
+
+.single_product_item:hover {
+  -webkit-transform: scale(1.25, 1.25) !important;
+  transform: scale(1.05, 1.05) !important;
+}
+/* 
+.single_product_item:hover .single_product_text {
+  padding: 32px 32px 32px 32px !important;
+} */
+
+.single_product_item:hover .add_cart {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-heading {
+  font-family: 'Vietnam', sans-serif !important; 
+  font-size: 25px !important;
+}
+
+.product-price {
+  font-family: 'Vietnam', sans-serif !important; 
+  font-size: 20px !important;
+}
+/* @media only screen and (min-width: 1200px) and (max-width: 3640px) {
+  .container {
+    max-width: 1300px !important;
+  }
+} */
+
+@media only screen and (max-width: 449px) {
+  .product-container {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .product-container {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .product-container {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .product-container {
+    width: 50% !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .product-container {
+    width: 70% !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .product-container {
+    width: 60% !important;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .product-container {
+    width: 60% !important;
+  }
+
+  .product_price h3 {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .single_product_item:hover .product_price h3 {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .product-container {
+    width: 55% !important;
+  }
+
+  .product_price h3 {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .single_product_item:hover .product_price h3 {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.category_area .sub_categories ul li {
+  display: flex;
+  justify-content: space-between;
+  color: #35485F;
+}
+
+.category_area .sub_categories ul li:hover {
+  color: #CB8460;
+}
+
+.category_area .sub_categories ul li:hover a {
+  color: #CB8460;
+}
+
+.sub_categories {
+  padding-bottom: 15px;
+} 
+
+@media (max-width: 991px) {
+  .sub_categories {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.category_heading h3 {
+  font-family: 'Vietnam', sans-serif !important;
+  font-weight: 600;
+  margin-bottom: 20px !important;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #35485F;
+  line-height: 40px;
+}
+
+.categories .sub_categories:last-child {
+  border-bottom: 0px;
+}
+
+.categories .list {
+  padding-inline-start: 0px !important;
+}
+
+.categories .list li {
+  margin-bottom: 10px;
+}
+
+.categories .list li a {
+  font-size: 12px;
+  font-family: 'Vietnam', sans-serif !important;
+  font-weight: 100;
+  color: #35485F;
+  position: relative;
+}
+
+.search_bar {
+  clear: both;
+  display: flex;
+  padding: 10px 0;
+}
+
+@media (max-width: 576px) {
+  .search_bar {
+    display: block !important;
+  }
+}
+
+.search_bar .left_dorp .sorting {
+  display: inline-block;
+  clear: none;
+  border: 1px solid #eeeeee;
+  border-radius: 0px;
+  height: 40px;
+  width: 210px;
+  padding-left: 20px;
+}
+
+.search_bar .left_dorp .sorting span {
+  font-size: 14px;
+  font-family: "futura-medium" !important;
+  color: #555555;
+}
+
+.search_bar .left_dorp .sorting .list {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.search_bar .left_dorp .sorting .list li {
+  font-size: 14px;
+  font-family: "futura-medium" !important;
+  color: #555555;
+}
+
+.search_bar .left_dorp .sorting:after {
+  content: "\f0d7";
+  font: normal normal normal 14px/1 FontAwesome;
+  transform: rotate(0);
+  border: none;
+  color: #555555;
+  margin-top: -6px;
+  right: 20px;
+}
+
+.search_bar .left_dorp .show {
+  clear: none;
+  display: inline-block;
+  clear: none;
+  border: 1px solid #eeeeee;
+  border-radius: 0px;
+  height: 40px;
+  width: 120px;
+  padding-left: 20px;
+  margin-left: 10px;
+}
+
+.search_bar .left_dorp .show span {
+  font-size: 14px;
+  font-family: "futura-medium" !important;
+  color: #555555;
+}
+
+.search_bar .left_dorp .show .list {
+  width: 100%;
+  border-radius: 0px;
+}
+
+.search_bar .left_dorp .show .list li {
+  font-size: 14px;
+  font-family: "futura-medium" !important;
+  color: #555555;
+}
+
+.search_bar .left_dorp .show:after {
+  content: "\f0d7";
+  font: normal normal normal 14px/1 FontAwesome;
+  transform: rotate(0);
+  border: none;
+  color: #555555;
+  margin-top: -6px;
+  right: 20px;
+}
+
+@media (max-width: 576px) {
+  .search_bar .single_product_menu {
+    width: 100% !important;
+    float: right !important;
+    margin-bottom: 20px;
+  }
+}
+
+.search_bar .single_product_menu p {
+  color: #020202;
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .search_bar .single_product_menu p {
+    font-size: 13px;
+    line-height: 13px;
+  }
+}
+
+.search_bar .single_product_menu p span {
+  color: #ff3368;
+}
+
+.search_bar .single_product_menu h5 {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.search_bar .single_product_menu .nice-select {
+  height: 0;
+  border: 0px;
+  line-height: 15px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.search_bar .single_product_menu .nice-select:after {
+  margin-top: 0;
+  border-bottom: 1px solid #999;
+  border-right: 1px solid #999;
+  right: 0px;
+}
+
+.search_bar .single_product_menu .top_pageniation {
+  line-height: 15px;
+}
+
+.search_bar .single_product_menu .top_pageniation ul {
+  margin-left: 20px;
+}
+
+.search_bar .single_product_menu .top_pageniation ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.search_bar .single_product_menu .input-group {
+  width: 200px;
+}
+
+.search_bar .single_product_menu .input-group .form-control {
+  border: 0px solid transparent;
+  border-bottom: 1px solid #ddd;
+  border-radius: 0;
+  text-align: center;
+  text-transform: lowercase;
+}
+
+.search_bar .single_product_menu .input-group .input-group-text {
+  background-color: transparent;
+  border: 0px solid transparent;
+  border-bottom: 1px solid #ddd !important;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+
+.addIcon {
+  margin: 20px auto;
+  display: table;
+  padding: 30px;
+  background: url("https://image.flaticon.com/icons/svg/60/60740.svg") center no-repeat;
+  background-size: contain;
+  border: none;
+}

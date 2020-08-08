@@ -1,0 +1,214 @@
+@import '../../Fonts/Fonts.css';
+
+.cart_area .product_count {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.cart_area .product_count input {
+  width: 76px;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.cart_area .product_count .input-number-increment {
+  position: absolute;
+  right: 0;
+  top: -5px;
+  padding: 7px;
+  border-left: 1px solid #dddddd;
+  display: inline-block;
+}
+
+.cart_area .product_count .input-number-increment:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 6px;
+  width: 100%;
+  height: 1px;
+  background-color: #dddddd;
+}
+
+.cart_area .product_count .input-number-decrement {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  padding: 7px;
+  border-left: 1px solid #dddddd;
+  display: inline-block;
+} 
+
+@media (max-width: 576px) {
+  .cart_area .media {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .cart_area .media {
+    display: block;
+  }
+}
+
+.cart_container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  font-family: 'Vietnam', sans-serif !important; 
+  margin-bottom: 30px !important;
+  border-bottom: 1px solid #dddddd !important;
+  width: 100% !important;
+}
+
+table thead tr th {
+  border-top: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #CB8460 !important;
+  border-bottom: 0px !important;
+  padding: 0.75rem;
+  padding-left: 0.5rem !important;
+  vertical-align: bottom !important;
+  text-align: center;
+}
+
+table tbody tr td {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: middle !important;
+  align-self: center;
+  text-align: center;
+}
+
+table tbody tr td:first-child {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  vertical-align: middle !important;
+  align-self: center;
+  text-align: left;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+table tbody tr td .media .d-flex {
+  padding-right: 30px;
+}
+
+table tbody tr td .media .d-flex img {
+  border: 0px;
+  border-radius: 3px;
+  height: 20vh;
+  /* max-width: 100%; */
+  vertical-align: middle;
+}
+
+table tbody tr td .media .media-body {
+  vertical-align: middle !important;
+  align-self: center !important;
+}
+
+table tbody tr td .media .media-body p {
+  margin-bottom: 0px;
+}
+
+table tbody tr td h5 {
+  font-size: 14px;
+  color: #2a2a2a;
+  font-family: "futura-medium" !important;
+  margin-bottom: 0px;
+}
+
+table tbody tr td .product_count {
+  margin-bottom: 0px;
+  align-self: center !important;
+  /* border: 1px solid grey !important;
+  border-radius: 50px; */
+  /* padding: 5px 0; */
+  /* margin: 5px 40px !important; */
+}
+
+table tbody tr td .product_count input {
+  width: 100px;
+  padding-left: 20px !important;
+  height: 40px;
+  outline: none;
+  box-shadow: none;
+  /* text-align: center; */
+}
+
+table tbody tr td .product_count .increase {
+  top: -2px;
+}
+
+table tbody tr td .product_count .increase:before {
+  content: "";
+  height: 40px;
+  width: 1px;
+  position: absolute;
+  left: -3px;
+  top: 0px;
+  background: #eeeeee;
+}
+
+table tbody tr td .product_count .increase:after {
+  content: "";
+  height: 1px;
+  width: 30px;
+  position: absolute;
+  left: -3px;
+  top: 22px;
+  background: #eeeeee;
+}
+
+#down {
+  display: inline-block;
+  color: #CB8460 !important;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Vietnam', sans-serif !important; 
+}
+
+tr td h5 p {
+  display: inline-block;
+}
+
+td:nth-child(4) {
+  width: 85px !important;
+}
+
+.checkout_btn_inner {
+  margin-top: 20px !important;
+}
+
+.checkout_btn_inner .btn11 {
+  display: block;
+  border-radius: 2rem !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: #35485F !important;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 12px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px 30px;
+  margin: 0 5px;
+}
+
+.checkout_btn_inner .btn11:hover {
+  background-color: #CB8460 !important;
+}

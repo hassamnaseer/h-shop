@@ -1,0 +1,205 @@
+@import '../../Fonts/Fonts.css';
+
+.header-container {
+  width: 100% !important;
+  margin-left: 35px !important;
+  padding-right: 70px !important;
+}
+
+.top-header {
+  font-family: 'Vietnam', sans-serif !important; 
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: transparent;
+  padding: 20px 0px;
+  overflow: hidden;
+  font-size: 16px;
+}
+
+.top-header img {
+  margin: 0;
+  height: 8vh;
+  max-width: 100%;
+}
+
+.btn1 {
+  display: block;
+  border-radius: 2rem !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 7px !important;
+  padding-bottom: 10px !important;
+  background-color: #35485F !important;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.btn1:hover {
+  background-color: #CB8460 !important;
+}
+
+.btn2 {
+  display: none;
+  border-radius: 2rem !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #CB8460 !important;
+  font-size: 15px;
+}
+
+.btn2:hover {
+  text-decoration: underline !important;
+}
+
+.header-ul {
+  display: flex;
+  list-style-type: none;
+  margin: -20px;
+  padding: 0;
+  z-index: 999;
+}
+
+.top-header ul li {
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.top-header ul li a {
+  color: hsl(228, 39%, 23%);
+  text-decoration: none;
+  position: relative;
+}
+
+.top-header ul li a i {
+  position: relative;
+  z-index: 1;
+}
+
+.cartAmount {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #CB8460;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: -13px;
+  text-align: center;
+  line-height: 18px;
+  font-size: 10px;
+  color: #fff;
+}
+
+.top-header ul li a:hover {
+  color: #CB8460;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  display: none;
+}
+
+.btn-burger {
+  width: 25px;
+  height: 3px;
+  background: hsl(228, 39%, 23%);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-burger::before,
+.btn-burger::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 3px;
+  background: hsl(228, 39%, 23%);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-burger::before {
+  transform: translateY(-9px);
+}
+
+.btn-burger::after {
+  transform: translateY(9px);
+}
+
+.menu-btn.open .btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+}
+
+.menu-btn.open .btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+@media (max-width: 800px) {
+  .top-header img {
+    max-height: 50px;
+  }
+  .top-header ul {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 80px;
+    background-color: #fff;
+    width: 60%;
+    left: 23%;
+    flex-direction: column;
+    text-align: center;
+    transform: translateX(150%);
+    transition: transform 0.5s ease;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #888888;
+  }
+
+  .top-header ul.show {
+    transform: translateX(0);
+  }
+
+  .top-header ul li {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+
+  .btn1 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 7px !important;
+    padding-bottom: 10px !important;
+    display: none;
+  }
+
+  .btn2 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 7px !important;
+    padding-bottom: 5px !important;
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+    padding-top: 10px;
+  }
+}

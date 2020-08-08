@@ -1,0 +1,128 @@
+@import '../../Fonts/Fonts.css';
+
+.container {
+  font-family: 'Vietnam', sans-serif !important; 
+}
+
+.heading {
+  font-family: 'montserrat-bold', sans-serif !important;
+  padding-top: 70px !important;
+  font-size: 40px;
+  color: #35485F;
+}
+
+.divider {
+  height: 25% !important;
+  top: 52% !important;
+}
+
+.h {
+  display: flex !important;
+  justify-content: space-around !important;
+  /* text-align: center !important; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.h img {
+  margin-top: 30px;
+  height: auto;
+  max-height: 70px;
+  max-width: 100%;
+}
+
+.form {
+  padding-top: 100px;
+}
+
+.form-control:focus {
+  color: #35485F;
+}
+
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #35485F !important;
+  box-shadow: 0 1px 0 0 #35485F !important;
+}
+
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label {
+  color: #35485F !important;
+}
+
+.md-form input[type="email"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #35485F !important;
+  box-shadow: 0 1px 0 0 #35485F !important;
+}
+
+.md-form input[type="email"]:not(.browser-default):focus:not([readonly])+label {
+  color: #35485F !important;
+}
+
+.md-form input[type="password"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #35485F !important;
+  box-shadow: 0 1px 0 0 #35485F !important;
+}
+
+.md-form input[type="password"]:not(.browser-default):focus:not([readonly])+label {
+  color: #35485F !important;
+}
+
+.md-form {
+  margin-top: 0 !important;
+}
+
+.error {
+  border-bottom: 1px solid #dd0606 !important;
+}
+
+.ui.label {
+  background-color: rgb(179, 27, 27) !important;
+  color: #fff !important;
+  font-weight: 300 !important;
+  margin: 0 !important;
+}
+
+.ui.pointing.label {
+
+}
+
+.btn {
+  background-color: #35485F !important;
+  border-radius: 25px !important;
+  padding: 15px 30px !important;
+  margin-bottom: 25px !important;
+}
+
+#a {
+  color: #CB8460;
+  font-size: 18px;
+}
+
+#a:hover {
+  color: #CB8460;
+  text-decoration: underline;
+}
+
+.modal {
+  height: fit-content !important;
+  width: 100% !important;
+}
+
+.modal .content {
+  font-family: 'Vietnam', sans-serif !important; 
+  color: #35485F;
+  font-size: 18px !important;
+}
+
+.modal a {
+  font-size: 18px;
+  font-weight: 600;
+  color: green !important;
+}
+
+.modal a:hover {
+  text-decoration: underline !important;
+}
+
+#emailHelp {
+  color: rgb(231, 8, 8) !important;
+}
