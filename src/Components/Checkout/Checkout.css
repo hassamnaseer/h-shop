@@ -1,0 +1,20 @@
+.btn11 {
+  display: block;
+  border-radius: 2rem !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  background-color: #35485F !important;
+  color: #fff !important;
+  font-weight: 500;
+  font-size: 12px;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px 30px;
+  margin: 0 5px;
+}
+
+.btn11:hover {
+  background-color: #CB8460 !important;
+}

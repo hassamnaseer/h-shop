@@ -53,12 +53,10 @@
 .card {
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0), 0 2px 10px 0 rgba(0,0,0,0) !important;
 }
-
-/* .product-image {
-  height: 20rem !important;
-  max-width: auto !important;
-  min-width: auto !important;
-  position: relative;
+/* 
+.product-image {
+  height: 273px;
+  width: 230px;
 } */
 
 .ui.card>.image>img {

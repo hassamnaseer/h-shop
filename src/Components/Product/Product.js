@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import "../Product/Product.css";
 import { MDBView, MDBMask } from "mdbreact";
 import { Container, Row, Col } from "react-bootstrap";
-import { Card, Image, Icon } from "semantic-ui-react";
+import { Card, Image, Icon, Dimmer, Loader } from "semantic-ui-react";
 import { getProducts, getProductDescription, getCart } from "../Redux/Actions/Action";
 import { Link } from 'react-router-dom';
 
@@ -11,6 +11,9 @@ const Product = () => {
   const products = useSelector((state) => state.products);
   const dispatch = useDispatch();
   const [search, setSearch] = useState('')
+  const [isImagesReady, setImagesReady] = useState(false)
+  const [imgWidth, setImgWidth] = useState(0)
+  const [imgHeight, setImgHeight] = useState(0);
   let arr = []
 
   useEffect(() => {
@@ -19,6 +22,10 @@ const Product = () => {
 
   const onSearchChange = (event) => {
     setSearch(event.target.value.toLowerCase())
+  }
+
+  const logit = () => {
+    console.log("abc");
   }
 
   return (
@@ -84,43 +91,51 @@ const Product = () => {
             <Row className="align-items-center">
               {(products !== undefined && products !== null)
                 && Object.keys(products).filter((product) => {
-                  if(products[product].data().Name.toLowerCase().includes(search)) {
+                  if(products[product].data().Name.toLowerCase().startsWith(search)) {
                     arr.push(products[product].data())
                     return arr
                   }
                 })
                 .map((index, i) => {
                   return (
-                    <Col lg={4} sm={6} key={index} className="products-grid">
-                      <Link to="/ProductDetails" 
-                      onClick={() => { dispatch(getCart(arr[i]))  }}
-                      >
-                        <Card className="single_product_item">
-                        <Image
-                          className="product-image"
-                          src={arr[i].ImageURL}
-                          wrapped
-                          ui={false}
-                          alt={arr[i].Name}
-                        />
-                        <Card.Content className="single_product_text">
-                          <Card.Header className="product_heading">
-                            <h2>{arr[i].Name}</h2>
-                          </Card.Header>
-                          <Card.Description className="product_price">
-                            <h3>Rs {arr[i].Price}</h3>
-                          </Card.Description>
-                        </Card.Content>
-                      </Card>
-                      </Link>
-                    </Col>
-                  );
+										<Col lg={4} sm={6} key={index} className="products-grid">
+											<Link
+												to="/ProductDetails"
+												onClick={() => {
+													dispatch(getCart(arr[i]));
+												}}
+											>
+												<Card className="single_product_item">
+													<Image
+														className="product-image"
+														src={arr[i].ImageURL}
+														alt={arr[i].Name}
+                            style={{height: imgHeight, width: imgWidth}}
+														onLoad={() => {setImagesReady(true); setImgHeight(273); setImgWidth(230)}}
+													/>
+													{!isImagesReady && (
+														<div style={{ height: 273, width: 230 }}>
+																<Loader active size="massive"></Loader>
+														</div>
+													)}
+													<Card.Content className="single_product_text">
+														<Card.Header className="product_heading">
+															<h2>{arr[i].Name}</h2>
+														</Card.Header>
+														<Card.Description className="product_price">
+															<h3>Rs {arr[i].Price}</h3>
+														</Card.Description>
+													</Card.Content>
+												</Card>
+											</Link>
+										</Col>
+									);
                   })
                 }
             </Row>
           </Col>
         </Row>
-        {/* <Link className = "addIcon" to="/AddProduct"> </Link>  */}
+        <Link className = "addIcon" to="/AddProduct"> </Link> 
       </Container>
     </Fragment>
   );

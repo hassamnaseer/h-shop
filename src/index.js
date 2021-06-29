@@ -9,10 +9,10 @@ import thunk from 'redux-thunk'
 import { Router } from 'react-router-dom'
 import createHistory from 'history/createBrowserHistory'
 import Reducer from './Components/Redux/Reducers/Reducer';
-
+import { composeWithDevTools } from "redux-devtools-extension";
 export const history = createHistory()
 
-const store = createStore(Reducer, applyMiddleware(thunk))
+const store = createStore(Reducer, composeWithDevTools(applyMiddleware(thunk)));
 
 ReactDOM.render(
     <Provider store={store}>

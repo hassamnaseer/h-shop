@@ -140,7 +140,7 @@ table tbody tr td .product_count {
 }
 
 table tbody tr td .product_count input {
-  width: 100px;
+  width: 50px !important;
   padding-left: 20px !important;
   height: 40px;
   outline: none;

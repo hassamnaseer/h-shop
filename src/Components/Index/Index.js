@@ -10,8 +10,10 @@ import About from "../About/About.js";
 import AddProduct from "../AddProduct/AddProduct";
 import ProductDetails from "../ProductDetails/ProductDetails";
 import Cart from "../Cart/Cart";
+import Checkout from "../Checkout/Checkout";
 
 const Index = (props) => {
+  console.log(props.user);
   return (
     <Fragment>
       <Header user={props.user.uid} />
@@ -28,6 +30,8 @@ const Index = (props) => {
       <Route exact path="/ProductDetails" render={() => <ProductDetails user={props.user.uid} />} />
 
       <Route exact path="/Cart" render={() => <Cart user={props.user.uid} />} />
+
+      <Route exact path="/Checkout" render={() => <Checkout user={props.user} />} />
       <Footer />
     </Fragment>
   );

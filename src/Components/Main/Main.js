@@ -14,8 +14,8 @@ const Main = () => {
   return (
     <div>
       {user !== undefined && user === null ? (<div className="loader-wrapper">
-        <span className="loader">
-          <span className="loader-inner"></span>
+        <span className="loader-1">
+          <span className="loader-inner-1"></span>
         </span>
       </div>) : 
       (<div>

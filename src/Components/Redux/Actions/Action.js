@@ -55,3 +55,10 @@ export const getCart = (product) => {
     dispatch1(getCartAsync({...documents1.docs}, product))
   }
 }
+
+export const sendTotalToCheckout = (total) => {
+  return {
+		type: "TOTAL_TO_CHECKOUT",
+		payload: total
+	};
+}
